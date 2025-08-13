@@ -123,9 +123,10 @@ body {
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 4rem;
   align-items: center;
+  place-items: center;
 }
 
 .hero-title {
