@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouAreOn - Find Your Perfect Match</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-location-dot"></i>
+          <span>YouAreOn</span>
+        </div>
+
+        <div class="nav-menu">
+          <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="cz">CZ</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1
+              class="hero-title"
+              data-en="Find Your Perfect Match"
+              data-cz="Najděte svou dokonalou shodu"
+            >
+              Find Your Perfect Match
+            </h1>
+            <p
+              class="hero-subtitle"
+              data-en="Connect with like-minded people and discover meaningful relationships in a safe, welcoming environment."
+              data-cz="Spojte se s podobně smýšlejícími lidmi a objevte smysluplné vztahy v bezpečném a přívětivém prostředí."
+            >
+              Connect with like-minded people and discover meaningful
+              relationships in a safe, welcoming environment.
+            </p>
+            <button
+              class="cta-button"
+              data-en="Enter the Application"
+              data-cz="Vstoupit do aplikace"
+            >
+              <span>Enter the Application</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="hero-image">
+            <div class="hero-graphic">
+              <div class="floating-hearts">
+                <i class="fas fa-heart heart-1"></i>
+                <i class="fas fa-heart heart-2"></i>
+                <i class="fas fa-heart heart-3"></i>
+              </div>
+              <div class="profile-cards">
+                <div class="profile-card card-1">
+                  <div class="profile-avatar">
+                    <img
+                      src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+                      alt="Sarah, 28"
+                    />
+                  </div>
+                  <div class="profile-info">
+                    <div class="profile-name">Sarah, 28</div>
+                    <div class="profile-location">
+                      <i class="fas fa-map-marker-alt"></i> Vinohrady, Prague
+                    </div>
+                    <div class="profile-interests">
+                      <span class="interest-tag">River walks</span>
+                      <span class="interest-tag">Museums</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-card card-2">
+                  <div class="profile-avatar">
+                    <img
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+                      alt="David, 32"
+                    />
+                  </div>
+                  <div class="profile-info">
+                    <div class="profile-name">David, 32</div>
+                    <div class="profile-location">
+                      <i class="fas fa-map-marker-alt"></i> Malá Strana, Prague
+                    </div>
+                    <div class="profile-interests">
+                      <span class="interest-tag">Castle tours</span>
+                      <span class="interest-tag">Coffee</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Success Stories Images -->
+              <div class="success-stories">
+                <div class="couple-photo couple-1">
+                  <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop"
+                    alt="Couple by the river"
+                  />
+                  <div class="success-badge">
+                    <i class="fas fa-heart"></i>
+                    <span data-en="River date" data-cz="Rande u řeky"
+                      >River date</span
+                    >
+                  </div>
+                </div>
+                <div class="couple-photo couple-2">
+                  <img
+                    src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=200&h=200&fit=crop"
+                    alt="Happy couple in Prague"
+                  />
+                  <div class="success-badge">
+                    <i class="fas fa-heart"></i>
+                    <span data-en="Prague wedding" data-cz="Pražská svatba"
+                      >Prague wedding</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="features-container">
+        <h2
+          class="features-title"
+          data-en="Why Choose YouAreOn?"
+          data-cz="Proč si vybrat YouAreOn?"
+        >
+          Why Choose YouAreOn?
+        </h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-image">
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop"
+                alt="Security and privacy"
+              />
+            </div>
+            <div class="feature-content">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3 data-en="Safe & Secure" data-cz="Bezpečné a zabezpečené">
+                Safe & Secure
+              </h3>
+              <p
+                data-en="Your privacy and safety are our top priorities with advanced verification and security measures."
+                data-cz="Vaše soukromí a bezpečnost jsou našimi hlavními prioritami s pokročilým ověřováním a bezpečnostními opatřeními."
+              >
+                Your privacy and safety are our top priorities with advanced
+                verification and security measures.
+              </p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-image">
+              <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=250&fit=crop"
+                alt="Quality matches"
+              />
+            </div>
+            <div class="feature-content">
+              <div class="feature-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 data-en="Quality Matches" data-cz="Kvalitní shody">
+                Quality Matches
+              </h3>
+              <p
+                data-en="Our smart algorithm connects you with compatible people based on your interests and values."
+                data-cz="Náš chytrý algoritmus vás spojuje s kompatibilními lidmi na základě vašich zájmů a hodnot."
+              >
+                Our smart algorithm connects you with compatible people based on
+                your interests and values.
+              </p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-image">
+              <img
+                src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=400&h=250&fit=crop"
+                alt="Meaningful connections"
+              />
+            </div>
+            <div class="feature-content">
+              <div class="feature-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3 data-en="Meaningful Connections" data-cz="Smysluplná spojení">
+                Meaningful Connections
+              </h3>
+              <p
+                data-en="Build genuine relationships that last with people who share your vision for the future."
+                data-cz="Budujte skutečné vztahy, které vydrží s lidmi, kteří sdílejí vaši vizi budoucnosti."
+              >
+                Build genuine relationships that last with people who share your
+                vision for the future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="testimonials-container">
+        <h2
+          class="testimonials-title"
+          data-en="Success Stories"
+          data-cz="Příběhy úspěchu"
+        >
+          Success Stories
+        </h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-images">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+                alt="Michael"
+                class="testimonial-avatar"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face"
+                alt="Emma"
+                class="testimonial-avatar"
+              />
+            </div>
+            <div class="testimonial-content">
+              <p
+                data-en="We met on YouAreOn 18 months ago and got married last month! The platform helped us find exactly what we were looking for in each other."
+                data-cz="Seznámili jsme se na YouAreOn před 18 měsíci a minulý měsíc jsme se vzali! Platforma nám pomohla najít přesně to, co jsme v sobě hledali."
+              >
+                "We met on YouAreOn 18 months ago and got married last month!
+                The platform helped us find exactly what we were looking for in
+                each other."
+              </p>
+              <div class="testimonial-author">
+                <strong>Michael & Emma</strong>
+                <span data-en="Married in Prague" data-cz="Vzali se v Praze"
+                  >Married in Prague</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-images">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+                alt="Jan"
+                class="testimonial-avatar"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
+                alt="Petra"
+                class="testimonial-avatar"
+              />
+            </div>
+            <div class="testimonial-content">
+              <p
+                data-en="After trying many dating apps, YouAreOn was different. The quality of matches and the safety features made all the difference. We've been together for 2 years now!"
+                data-cz="Po vyzkoušení mnoha seznamovacích aplikací byl YouAreOn jiný. Kvalita shod a bezpečnostní funkce udělaly velký rozdíl. Jsme spolu už 2 roky!"
+              >
+                "After trying many dating apps, YouAreOn was different. The
+                quality of matches and the safety features made all the
+                difference. We've been together for 2 years now!"
+              </p>
+              <div class="testimonial-author">
+                <strong>Jan & Petra</strong>
+                <span data-en="Together 2 years" data-cz="Spolu 2 roky"
+                  >Together 2 years</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-images">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face"
+                alt="Tomáš"
+                class="testimonial-avatar"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&crop=face"
+                alt="Klára"
+                class="testimonial-avatar"
+              />
+            </div>
+            <div class="testimonial-content">
+              <p
+                data-en="The algorithm really works! We matched based on our shared love for hiking and travel. Now we're planning our future adventures together."
+                data-cz="Algoritmus opravdu funguje! Shodli jsme se na základě naší společné lásky k turistice a cestování. Nyní plánujeme naše budoucí dobrodružství společně."
+              >
+                "The algorithm really works! We matched based on our shared love
+                for hiking and travel. Now we're planning our future adventures
+                together."
+              </p>
+              <div class="testimonial-author">
+                <strong>Tomáš & Klára</strong>
+                <span data-en="Engaged" data-cz="Zasnoubeni">Engaged</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <h2 data-en="Ready to Find Love?" data-cz="Připraveni najít lásku?">
+          Ready to Find Love?
+        </h2>
+        <p
+          data-en="Join thousands of happy couples who found their perfect match on YouAreOn."
+          data-cz="Připojte se k tisícům šťastných párů, kteří našli svou dokonalou shodu na YouAreOn."
+        >
+          Join thousands of happy couples who found their perfect match on
+          YouAreOn.
+        </p>
+        <button
+          class="cta-button secondary"
+          data-en="Get Started Today"
+          data-cz="Začněte ještě dnes"
+        >
+          <span>Get Started Today</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>YouAreOn</h3>
+            <p
+              data-en="Connecting hearts, creating futures."
+              data-cz="Spojujeme srdce, vytváříme budoucnost."
+            >
+              Connecting hearts, creating futures.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4 data-en="Company" data-cz="Společnost">Company</h4>
+              <ul>
+                <li>
+                  <a href="#" data-en="About Us" data-cz="O nás">About Us</a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-en="Privacy Policy"
+                    data-cz="Zásady ochrany osobních údajů"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-en="Terms of Service"
+                    data-cz="Podmínky služby"
+                    >Terms of Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 data-en="Support" data-cz="Podpora">Support</h4>
+              <ul>
+                <li>
+                  <a href="#" data-en="Help Center" data-cz="Centrum nápovědy"
+                    >Help Center</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-en="Contact Us" data-cz="Kontaktujte nás"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-en="Safety Tips" data-cz="Bezpečnostní tipy"
+                    >Safety Tips</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 YouAreOn.
+            <span
+              data-en="All rights reserved."
+              data-cz="Všechna práva vyhrazena."
+              >All rights reserved.</span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
