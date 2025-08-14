@@ -13,19 +13,80 @@ body {
 }
 
 .logo {
-  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
   font-size: 1.8rem;
   font-weight: 700;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
-.logo i {
-  color: var(--accent);
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.logo-icon:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.logo-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  letter-spacing: -1px;
+  display: inline-block;
+}
+
+.logo .you-text {
+  color: #2c3e50;
+  text-transform: lowercase;
+}
+
+.logo .are-text {
+  color: #e74c3c;
+  font-style: italic;
+  position: relative;
+  text-transform: lowercase;
+}
+
+.logo .on-text {
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Footer logo specific styling for better contrast */
+.footer .logo {
+  gap: 4px; /* Even tighter spacing for footer */
+}
+
+.footer .logo .you-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer .logo .are-text {
+  color: #ff6b6b; /* Keep the red for "are" */
+}
+
+.footer .logo .on-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Add a subtle animation to the heart */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.logo-icon:hover svg path:nth-child(2) {
+  animation: heartbeat 1s ease-in-out infinite;
 }
 
 /* Navigation */

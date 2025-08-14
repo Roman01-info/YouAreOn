@@ -6,7 +6,7 @@
     <title>YouAreOn - Find Your Perfect Match</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,8 +19,27 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo">
-          <i class="fas fa-location-dot"></i>
-          <span>YouAreOn</span>
+          <div class="logo-icon">
+            <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+              <!-- Circular base (light blue) -->
+              <ellipse cx="25" cy="40" rx="18" ry="6" fill="#87CEEB" opacity="0.7"/>
+              <!-- Location pin shape -->
+              <path d="M25 8C19.5 8 15 12.5 15 18c0 7.5 10 22 10 22s10-14.5 10-22c0-5.5-4.5-10-10-10z"
+                    fill="url(#logoGradient)" stroke="#fff" stroke-width="1"/>
+              <!-- White circle inside pin -->
+              <circle cx="25" cy="18" r="6" fill="#fff"/>
+              <!-- Gradient definition -->
+              <defs>
+                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <span class="logo-text">
+            <span class="you-text">you</span><span class="are-text">are</span><span class="on-text">ON</span>
+          </span>
         </div>
 
         <div class="nav-menu">
@@ -450,8 +469,27 @@
         <div class="footer-content">
           <div class="footer-logo">
             <div class="logo">
-              <i class="fas fa-location-dot"></i>
-              <span>YouAreOn</span>
+              <div class="logo-icon">
+                <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Circular base (light blue) -->
+                  <ellipse cx="25" cy="40" rx="18" ry="6" fill="#87CEEB" opacity="0.7"/>
+                  <!-- Location pin shape -->
+                  <path d="M25 8C19.5 8 15 12.5 15 18c0 7.5 10 22 10 22s10-14.5 10-22c0-5.5-4.5-10-10-10z"
+                        fill="url(#logoGradientFooter)" stroke="#fff" stroke-width="1"/>
+                  <!-- White circle inside pin -->
+                  <circle cx="25" cy="18" r="6" fill="#fff"/>
+                  <!-- Gradient definition -->
+                  <defs>
+                    <linearGradient id="logoGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <span class="logo-text">
+                <span class="you-text">you</span><span class="are-text">are</span><span class="on-text">ON</span>
+              </span>
             </div>
             <p
               data-en="Connecting hearts, creating futures."
